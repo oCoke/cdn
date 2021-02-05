@@ -30,6 +30,16 @@
 		}
 		return json;
 	})(),
+	isMobile = /Android|iPhone|iPad/i.test(navigator.userAgent),
+	lang = (function () {
+		if (/^(yue|zh)(-cn|-hans(-[a-z]+)?)?$/i.test(navigator.language)) {
+			return "zh-CN";
+		} else if (navigator.language.startsWith("zh") || navigator.language.startsWith("yue")) {
+			return "zh-TW";
+		} else {
+			return "en-US";
+		}
+	})();
   var path = $_GET['url'];
   window.location.href=path;
   //$("#newUrl").html(`<a href='${path}'>${path}</a`);
