@@ -4,6 +4,6 @@ var html = `
   <a href="https://google.com" rel="nofollow">来自谷歌的广告 — 谷歌搜索</a>
 </div>
 `;
-let tags = document.querySelector(tag);
-  tags.innerHTML=html;
+//let tags = document.querySelector(tag);
+$(tag).html(html);
 }
