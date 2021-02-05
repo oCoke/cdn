@@ -4,10 +4,10 @@ var html = `
   <a href="https://google.com" rel="nofollow">来自谷歌的广告 — 谷歌搜索</a>
 </div>
 `;
-let tag = document.querySelectorAll(tag);
+let tags = document.querySelectorAll(tag);
 let i = 0;
-if (i<tag.length){
-  tag[i].innerHTML=html;
+if (i<tags.length){
+  tags[i].innerHTML=html;
   i++;
 }
 }
