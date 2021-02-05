@@ -29,5 +29,24 @@
     境外 - Cloudflare</h3>
     
   -->
+  <hr/>
+  <div class="ads-text-v"></div>
+  <script>
+  function loadAds() {
+  var elejq = document.createElement("script");
+    elejq.src = "https://cdn.jsdelivr.net/npm/jquery";
+    document.body.appendChild(elejq);
+  
+    var ele = document.createElement("script");
+    ele.src = "https://cdn.yfun.top/ads/text.js";
+    document.body.appendChild(ele);
+    AdsText(".ads-text-v");
+  }
+  if (window.addEventListener)
+    window.addEventListener("load", loadAds, false);
+  else if (window.attachEvent)
+    window.attachEvent("onload", loadAds);
+  else window.onload = loadAds;
+  </script>
 </body></html>
 
