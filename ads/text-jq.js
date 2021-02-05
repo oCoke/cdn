@@ -6,7 +6,7 @@ var html = `
 </div>
 <div class="ads-img-yfun">
   <a href="https://tools.shengmingyun.top" target="_blank">
-    <img src="https://7.dusays.com/2021/02/05/812b772bf3ac6.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAAD5Ip3+AAAADUlEQVQIHWM4c+bMfwAIMANkxSThkAAAAABJRU5ErkJggg==" data-srcset="https://7.dusays.com/2021/02/05/812b772bf3ac6.png" class="lazyload-source">
+    <img src="https://7.dusays.com/2021/02/05/812b772bf3ac6.png" data-src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAAD5Ip3+AAAADUlEQVQIHWM4c+bMfwAIMANkxSThkAAAAABJRU5ErkJggg==" data-srcset="https://7.dusays.com/2021/02/05/812b772bf3ac6.png" class="lazyload-source">
   </a>
 </div>
 `;
