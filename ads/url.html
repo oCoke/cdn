@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <title>YFun's Home</title>
+  <style>
+    a{
+      color: blue;
+      text-decoration: none;
+    }
+    body{
+      text-align: center;
+    }
+  </style>
+  <script data-ad-client="ca-pub-5902069866611465" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> 
+</head>
+<body>
+  <div class="ads-text-v"></div>
+  <script src="//cdn.jsdelivr.net/npm/jquery"></script>
+  <script>
+  var $_GET = (function () {
+		var json = {};
+		if (location.search) {
+			var parameters = location.search.replace("?", "").split("&");
+			for (var i = 0; i < parameters.length; i++) {
+				var split = parameters[i].split("=");
+				json[split[0]] = decodeURIComponent(split[1]);
+			}
+		}
+		return json;
+	})(),
+  var path = $_GET['url'];
+  window.location.href=path;
+  //$("#newUrl").html(`<a href='${path}'>${path}</a`);
+  </script>
+  <script src="https://cdn.yfun.top/ads/text-jq.js"></script>
+  <script>
+    AdsText(".ads-text-v");
+  </script>
+</body>
+</html>
