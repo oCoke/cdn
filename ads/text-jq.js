@@ -1,9 +1,9 @@
 function AdsText(tag){
 var html = `
 <div class="ads-text-yfun">
-  <a href="https://google.com" rel="nofollow" target="_blank">来自谷歌的广告 — 谷歌搜索</a> · 
+  <a href="https://google.com" rel="nofollow" target="_blank">来自谷歌的广告 — 谷歌搜索</a>
 <!--
-  <a href="https://tools.shengmingyun.top" target="_blank">圣明云收录网</a>
+   · <a href="https://tools.shengmingyun.top" target="_blank">圣明云收录网</a>
 -->
 </div>
 <div class="ads-img-yfun">
