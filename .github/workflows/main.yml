@@ -44,6 +44,8 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Push
         run: |
+          git config --global user.email "WebP-Convert-Bot@yfun.top"
+          git config --global user.name "WebP Convert Bot"
           git add .
           git commit -m "Convert to WebP"
           git push origin master
