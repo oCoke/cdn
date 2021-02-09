@@ -25,6 +25,8 @@ jobs:
         
       - name: Publish Package
         run: |
+          git config --global user.email "publish-npm@yfun.top"
+          git config --global user.name "Publish NPM Bot"
           npm version prepatch
           npm publish
         env:
