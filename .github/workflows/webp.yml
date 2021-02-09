@@ -1,0 +1,52 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the action will run. 
+on:
+  # Triggers the workflow on push or pull request events but only for the master branch
+  push:
+    branches: 
+      - npm
+  pull_request:
+    branches: [ npm ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: master
+
+      - name: Setup Node # 安装 Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: "12.x"
+          
+      - name: Install
+        run: |
+          npm install -g webp-batch-convert
+     
+      - name: Convert
+        run: |
+          cwebp-batch --in hppimg --out hppwebp -q 75 -quiet
+          mv hppwebp/*.webp hppimg/
+      # Runs a set of commands using the runners shell
+      - name: Push
+        run: |
+          git config --global user.email "WebP-Convert-Bot@yfun.top"
+          git config --global user.name "WebP Convert Bot"
+          git add .
+          git commit -m "Convert to WebP"
+          git push origin npm
