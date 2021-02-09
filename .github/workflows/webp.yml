@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: WebP
 
 # Controls when the action will run. 
 on:
@@ -27,7 +27,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          ref: master
+          ref: npm
 
       - name: Setup Node # 安装 Node.js
         uses: actions/setup-node@v1
