@@ -1,9 +1,9 @@
 name: Node.js Package
 
 on:
-  push:
-    branches:
-      - npm
+  release:
+     types:
+       - published
 
   workflow_dispatch:
 
