@@ -6,3 +6,6 @@
 <p align="center">
 <img src="https://cdn.yfun.top/upimg/2021-01-22-15-59-8lI0lc.png" alt="https://cdn.yfun.top/upimg/2021-01-22-15-59-8lI0lc.png">
 </p>
+
+
+> 注意：重要文件，勿随意删除 `/avatar` `/hppimg` `/favicons` 等目录。
